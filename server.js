@@ -50,6 +50,6 @@ app.get("/hobbies", function(req, res) {
   res.send("I love basketball and coding");
 });
 
-app.listen(3001, function() {
+app.listen(process.env.PORT || 3001, function() {
   console.log("server started on port 3001");
 });
