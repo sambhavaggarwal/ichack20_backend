@@ -34,7 +34,7 @@ async function getProduct(ean, category) {
 app.get("/product/:barcode", async function(req, res) {
   const product = await getProduct(req.params.barcode, "Food");
   //   console.log(product);
-  res.send(product.product.product_name);
+  res.send(product);
 });
 
 app.get("/", function(req, res) {
