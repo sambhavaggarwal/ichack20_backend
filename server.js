@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
+const cors = require("cors");
+
+app.use(cors());
 
 function _getBaseUrl(category) {
   return category === "Food"
@@ -38,17 +41,17 @@ app.get("/", function(req, res) {
   res.send(`<h1>Hello World! Welcome to my server.</h1>`);
 });
 
-app.get("/contact", function(req, res) {
-  res.send("Contact me at sam@gmail.com");
-});
+// app.get("/contact", function(req, res) {
+//   res.send("Contact me at sam@gmail.com");
+// });
 
-app.get("/about", function(req, res) {
-  res.send("This belongs to Sambhav Aggarwal");
-});
+// app.get("/about", function(req, res) {
+//   res.send("This belongs to Sambhav Aggarwal");
+// });
 
-app.get("/hobbies", function(req, res) {
-  res.send("I love basketball and coding");
-});
+// app.get("/hobbies", function(req, res) {
+//   res.send("I love basketball and coding");
+// });
 
 app.listen(process.env.PORT || 3001, function() {
   console.log("server started on port 3001");
