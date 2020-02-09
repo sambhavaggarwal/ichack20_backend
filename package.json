@@ -1,0 +1,22 @@
+{
+  "name": "ichack_backend",
+  "version": "1.0.0",
+  "description": "Learning to use Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Sambhav Aggarwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "12.14.0"
+  }
+}
